@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Huh?</title>
+        <meta charset="utf-8" />
+        <link href="kendo/styles/kendo.mobile.all.min.css" rel="stylesheet" />
+
+        <script src="cordova.js"></script>
+        <script src="kendo/js/jquery.min.js"></script>
+        <script src="kendo/js/kendo.mobile.min.js"></script>        
+    </head>
+    <body>     
+        <div data-role="layout" data-id="defaultlayout">
+            <header data-role="header">
+                <div data-role="navbar">
+                    <a class="nav-button" data-align="left" data-role="backbutton">Back</a>
+                    <span data-role="view-title"></span>
+                    <a data-align="right" data-role="button" class="nav-button" href="#/">Home</a>
+                </div>
+            </header>
+        </div>
+        
+        <!--Home View-->
+        <div data-role="view" data-title="Views">           
+            <header data-role="header">
+                <div data-role="navbar">
+                    <span data-role="view-title"></span>
+                </div>
+            </header>
+            
+            <ul data-role="listview" data-style="inset" data-type="group">
+                <li>Source
+                    <ul>
+                        <li><a href="#view1">View 1</a></li>
+                    </ul>
+                </li>
+            </ul>
+
+            <ul data-role="listview" data-style="inset" data-type="group">
+                <li>Source
+                    <ul>
+                        <li><a href="#view2">View 2</a></li>
+                    </ul>
+                </li>
+            </ul>
+            
+            <ul data-role="listview" data-style="inset" data-type="group">
+                <li>Source
+                    <ul>
+                        <li><a href="#view3">View 3</a></li>
+                    </ul>
+                </li>
+            </ul>          
+    	</div>
+               
+        <div data-role="view" id="view1" data-layout="defaultlayout" data-title="View 1">
+            <ul data-role="listview" data-style="inset" data-type="group">
+                <li>
+                	Amateur - 3 rounds
+                    <ul>
+                        <li data-icon="toprated"><a>Nairobi</a></li>
+                        <li data-icon="globe"><a>Boston</a></li>
+                        <li data-icon="globe"><a>Ottawa</a></li>
+                    </ul>
+            	</li>
+            	<li>
+                    Prospect - 4 rounds
+                    <ul>
+                        <li data-icon="globe"><a>Boston</a></li>
+                        <li data-icon="globe"><a>Ottawa</a></li>
+                        <li data-icon="toprated"><a>San Francisco</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Contender - 8 rounds
+                    <ul>
+                        <li data-icon="globe"><a>Boston</a></li>
+                        <li data-icon="globe"><a>Ottawa</a></li>
+                        <li data-icon="toprated"><a>San Francisco</a></li>
+                    </ul>
+                </li>
+                <li>
+                    Champion - 12 rounds
+                    <ul>
+                        <li data-icon="globe"><a>Boston</a></li>
+                        <li data-icon="globe"><a>Ottawa</a></li>
+                        <li data-icon="toprated"><a>San Francisco</a></li>
+                    </ul>
+                </li>
+                <li>
+                    P4P
+                    <ul>
+                        <li data-icon="globe"><a>Cannes</a></li>
+                        <li data-icon="globe"><a>Liverpool</a></li>
+                        <li data-icon="toprated"><a>London</a></li>
+                    </ul>
+            	</li>
+        	</ul>
+        </div>
+        
+        <div data-role="view" id="view2" data-layout="defaultlayout" data-title="View 2">
+            <p>View 2</p>
+        </div>
+    	
+        <div data-role="view" id="view3" data-layout="defaultlayout" data-title="View 3">
+            <p>View 3</p> 
+        </div>
+        
+        <script>  
+         	var app = new kendo.mobile.Application(document.body);                     
+        </script>
+    </body>
+</html>
